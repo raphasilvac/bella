@@ -4,5 +4,13 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' })
+  res.render('home', { title: 'Express' })
+};
+
+exports.store = function(req, res){
+  res.render('store', { title: 'Express' })
+};
+
+exports.cart = function(req, res){
+  res.render('cart', { title: 'Express' })
 };
