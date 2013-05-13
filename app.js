@@ -33,6 +33,9 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/loja', routes.store);
 app.get('/carrinho', routes.cart);
+app.get('/sobre', routes.about);
+app.get('/conta', routes.account);
+app.get('/contato', routes.contact);
 
 app.listen(3000, function(){
   console.log("express-bootstrap app running");

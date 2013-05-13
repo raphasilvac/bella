@@ -2,11 +2,67 @@ extends layout
 
 block content
 	.page-title
+		.container
+			.row
+				.span12
+					i.icon-shopping-cart.page-title-icon
+					h2 Meu Carrinho /
+					p Confira aqui os itens do carrinho
+	.container.cart
+		.row 
+			.span12
+				div.shipping 
+					i.icon-tag  
+					span Consulte o prazo de entrega e valor para o seu CEP: 
+					input.input-small(type='text')
+					span.pull-right Entrega em: 0 dias úteis | Frete: Grátis
 		.row
 			.span12
-				i.icon-shopping-cart.page-title-icon
-				h2 Meu Carrinho /
-				p Confira aqui os itens do carrinho
-	.container
-		.row
-			.span12 Carrinho
+				table.table
+					thead
+						tr
+							th(colspan='2') PRODUTO
+							th ENTREGA
+							th QTD.
+							th VALOR UNITÁRIO
+							th VALOR TOTAL
+					tbody
+						tr
+							td
+								img(src='products/img/04.jpg', alt='')
+							td Perfume Marina de Bourbon Royal 100ml
+							td Digite se CEP acima para calcular o tempo de entrega
+							td 
+								div.input-append
+									input.span1(type='text', value='1')
+									button.btn(title="Atualizar") 
+										i.icon-refresh
+							td 
+								span.pull-right R$ 119,94
+							td 
+								span.pull-right R$ 119,94
+						tr
+							td
+								img(src='products/img/04.jpg', alt='')
+							td Perfume Marina de Bourbon Royal 100ml
+							td Digite se CEP acima para calcular o valor
+							td 
+								div.input-append
+									input.span1(type='text', value='1')
+									button.btn(title="Atualizar") 
+										i.icon-refresh
+							td 
+								span.pull-right R$ 119,94
+							td 
+								span.pull-right R$ 119,94
+					tfoot
+						tr
+							td(colspan='4') 
+								i.icon-gift 
+								span Digite o número do cupon ou vale presente:&nbsp;
+								input(type='text').input-small
+							td 
+								span.pull-right SUBTOTAL:
+							td 
+								span.pull-right R$ 119,94
+
