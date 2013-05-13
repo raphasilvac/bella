@@ -1,0 +1,55 @@
+// Header 
+.container
+  .header.row
+    .span12
+      .navbar
+        .navbar-inner
+          h1
+            a.brand(href='/') Bella - Cosméticos e Perfumes
+          .nav-collapse.collapse
+            div.pull-left
+              form.navbar-search
+                input(type='text', name='q', placeholder="O que você procura?")
+                button(type='submit') Pesquisar
+              div.pull-left.nav-section
+                a(href='') NAVEGUE PELOS NOSSOS SETORES 
+                  i.icon-chevron-down
+                ul.nav-section-sub
+                  li
+                    a(href='/loja') Cosméticos
+                  li
+                    a(href='/loja') Maquiagens
+                  li
+                    a(href='/loja') Perfumes
+        
+            ul.nav.pull-right
+              li.current-page 
+                a(href='index.html')
+                  i.icon-home
+                  br
+                  | Home
+              //- li
+                a(href='#')
+                  i.icon-comments
+                  br
+                  | Blog da Beleza
+              li
+                a(href='/carrinho')
+                  i.icon-shopping-cart
+                  br
+                  | Meu Carrinho
+              li
+                a(href='services.html')
+                  i.icon-tasks
+                  br
+                  | Minha Conta
+              li
+                a(href='about.html')
+                  i.icon-user
+                  br
+                  | Sobre
+              li
+                a(href='contact.html')
+                  i.icon-envelope-alt
+                  br
+                  | Contato
